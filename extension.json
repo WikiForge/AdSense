@@ -1,9 +1,7 @@
 {
   "name": "GoogleAdSense",
   "version": "1.0.0",
-  "author": [
-    "Agent Isai"
-  ],
+  "author": ["Agent Isai"],
   "url": "https://www.mediawiki.org/wiki/Extension:GoogleAdSense",
   "license-name": "GPL-2.0-or-later",
   "type": "other",
@@ -11,12 +9,10 @@
     "MediaWiki": ">= 1.44.0"
   },
   "MessagesDirs": {
-    "GoogleAdSense": [
-      "i18n"
-    ]
+    "GoogleAdSense": ["i18n"]
   },
   "AutoloadNamespaces": {
-    "MediaWiki\\Extension\\GoogleAdSense\\": "src/"
+    "MediaWiki\\Extension\\GoogleAdSense\\": "includes/"
   },
   "Hooks": {
     "BeforePageDisplay": "MediaWiki\\Extension\\GoogleAdSense\\Hooks::onBeforePageDisplay",
@@ -30,19 +26,10 @@
   },
   "ResourceModules": {
     "ext.googleadsense": {
-      "scripts": [
-        "resources/ext.googleadsense.js"
-      ],
-      "styles": [
-        "resources/ext.googleadsense.css"
-      ],
-      "dependencies": [
-        "mediawiki.util"
-      ],
-      "targets": [
-        "desktop",
-        "mobile"
-      ]
+      "scripts": ["resources/ext.googleadsense.js"],
+      "styles": ["resources/ext.googleadsense.css"],
+      "dependencies": ["mediawiki.util"],
+      "targets": ["desktop", "mobile"]
     }
   },
   "config": {
@@ -66,9 +53,7 @@
       "floatingBottom": false,
       "linkClick": false
     },
-    "GoogleAdSenseNamespaces": [
-      0
-    ],
+    "GoogleAdSenseNamespaces": [0],
     "GoogleAdSenseAllowSpecialPages": false,
     "GoogleAdSenseExemptLoggedIn": true,
     "GoogleAdSenseRequireViewRight": true,
@@ -82,10 +67,7 @@
     ],
     "GoogleAdSenseLinkClickDelayMs": 0
   },
-  "AvailableRights": [
-    "googleadsense-viewads",
-    "googleadsense-exempt"
-  ],
+  "AvailableRights": ["googleadsense-viewads", "googleadsense-exempt"],
   "GroupPermissions": {
     "*": {
       "googleadsense-viewads": true
