@@ -55,8 +55,6 @@
     },
     "GoogleAdSenseNamespaces": [0],
     "GoogleAdSenseAllowSpecialPages": false,
-    "GoogleAdSenseExemptLoggedIn": true,
-    "GoogleAdSenseRequireViewRight": true,
     "GoogleAdSenseUniversalInjector": true,
     "GoogleAdSenseSidebarPortletOrder": [
       "navigation",
@@ -67,15 +65,10 @@
     ],
     "GoogleAdSenseLinkClickDelayMs": 0
   },
-  "AvailableRights": ["googleadsense-viewads", "googleadsense-exempt"],
+  "AvailableRights": ["googleadsense-exempt"],
   "GroupPermissions": {
-    "*": {
-      "googleadsense-viewads": true
-    }
-  },
-  "RevokePermissions": {
-    "user": {
-      "googleadsense-viewads": true
+    "sysop": {
+      "googleadsense-exempt": true
     }
   },
   "manifest_version": 2

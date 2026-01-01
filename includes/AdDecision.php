@@ -34,16 +34,6 @@ final class AdDecision {
 			return false;
 		}
 
-		// Optionally exempt logged-in users (common for community wikis).
-		if ( (bool)$config->get( 'GoogleAdSenseExemptLoggedIn' ) && $authority->isRegistered() ) {
-			return false;
-		}
-
-		// Optionally require a view right to see ads.
-		if ( (bool)$config->get( 'GoogleAdSenseRequireViewRight' ) && !$authority->isAllowed( 'googleadsense-viewads' ) ) {
-			return false;
-		}
-
 		// Namespace filtering (applies after exemptions).
 		$title = $out->getTitle();
 		if ( !$title ) {
