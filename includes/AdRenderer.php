@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace MediaWiki\Extension\GoogleAdSense;
 
 use Config;
-use Html;
+use MediaWiki\Html\Html;
 
 /**
  * HTML rendering for ad containers.

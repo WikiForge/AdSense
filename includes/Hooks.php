@@ -3,7 +3,7 @@ declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\GoogleAdSense;
 
-use Html;
+use MediaWiki\Html\Html;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Parser\Parser;
 use MediaWiki\ResourceLoader\Module;
