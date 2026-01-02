@@ -20,7 +20,7 @@
     "SkinAfterContent": "MediaWiki\\Extension\\GoogleAdSense\\Hooks::onSkinAfterContent",
     "SkinAfterBottomScripts": "MediaWiki\\Extension\\GoogleAdSense\\Hooks::onSkinAfterBottomScripts",
     "SkinBuildSidebar": "MediaWiki\\Extension\\GoogleAdSense\\Hooks::onSkinBuildSidebar",
-    "SkinAfterPortlet": "MediaWiki\\Extension\\GoogleAdSense\\Hooks::onSkinAfterPortlet",
+    "SkinAfterPortlet": "MediaWiki\\Extension\\GoogleAdSense\\Hooks::onSkinAfterPortlet"
   },
   "ResourceModules": {
     "ext.googleadsense": {
