@@ -54,7 +54,6 @@ $wgGoogleAdSenseUniversalInjector = true;
 
 This extension defines two rights:
 
-- `googleadsense-viewads`: Permission to see ads.
 - `googleadsense-exempt`: Always exempt from ads.
 
 **Default behavior (from extension.json):**
@@ -72,17 +71,6 @@ To exempt a group:
 ```php
 $wgGroupPermissions['sysop']['googleadsense-exempt'] = true;
 ```
-
-## Inline ads
-
-Use the parser tag:
-
-```wikitext
-<adsense />
-<adsense slot="1111111111" />
-```
-
-Inline ads are inserted **after parser cache** so that they can respect per-request eligibility (logged-in exemptions / rights).
 
 ## Safety
 

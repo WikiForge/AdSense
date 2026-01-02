@@ -2,6 +2,7 @@
 <ruleset>
 	<file>.</file>
 	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki" />
+        <exclude name="MediaWiki.Commenting" />
 	<arg name="bootstrap" value="./vendor/mediawiki/mediawiki-codesniffer/utils/bootstrap-ci.php"/>
 	<arg name="extensions" value="php"/>
 	<arg name="encoding" value="UTF-8"/>

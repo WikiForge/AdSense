@@ -5,11 +5,7 @@ namespace MediaWiki\Extension\GoogleAdSense;
 
 use MediaWiki\Html\Html;
 use MediaWiki\Output\OutputPage;
-use MediaWiki\Parser\Parser;
-use MediaWiki\ResourceLoader\Module;
 use MediaWiki\Skin\Skin;
-use MediaWiki\Title\Title;
-use RequestContext;
 
 /**
  * Hook handlers for the GoogleAdSense extension.
